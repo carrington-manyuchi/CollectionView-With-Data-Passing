@@ -13,6 +13,7 @@
 		238D9BB729AB649000F1AEC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238D9BB529AB649000F1AEC0 /* Main.storyboard */; };
 		238D9BB929AB649100F1AEC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 238D9BB829AB649100F1AEC0 /* Assets.xcassets */; };
 		238D9BBC29AB649100F1AEC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 238D9BBA29AB649100F1AEC0 /* LaunchScreen.storyboard */; };
+		238D9BC429AB64DA00F1AEC0 /* DetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 238D9BC329AB64DA00F1AEC0 /* DetailsCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		238D9BB829AB649100F1AEC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		238D9BBB29AB649100F1AEC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		238D9BBD29AB649100F1AEC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		238D9BC329AB64DA00F1AEC0 /* DetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				238D9BAF29AB649000F1AEC0 /* AppDelegate.swift */,
 				238D9BB129AB649000F1AEC0 /* SceneDelegate.swift */,
+				238D9BC329AB64DA00F1AEC0 /* DetailsCollectionViewCell.swift */,
 				238D9BB329AB649000F1AEC0 /* ViewController.swift */,
 				238D9BB529AB649000F1AEC0 /* Main.storyboard */,
 				238D9BB829AB649100F1AEC0 /* Assets.xcassets */,
@@ -140,6 +143,7 @@
 				238D9BB429AB649000F1AEC0 /* ViewController.swift in Sources */,
 				238D9BB029AB649000F1AEC0 /* AppDelegate.swift in Sources */,
 				238D9BB229AB649000F1AEC0 /* SceneDelegate.swift in Sources */,
+				238D9BC429AB64DA00F1AEC0 /* DetailsCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
