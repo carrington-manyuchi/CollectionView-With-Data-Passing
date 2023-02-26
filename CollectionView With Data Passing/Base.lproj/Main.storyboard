@@ -42,7 +42,7 @@
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="oNv-NU-pNx"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name="HiraginoSans-W6" family="Hiragino Sans" pointSize="15"/>
                                                     <color key="textColor" red="0.18823529411764706" green="0.11764705882352941" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -88,6 +88,51 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="88.392857142857139"/>
+        </scene>
+        <!--Details View Controller-->
+        <scene sceneID="BTe-uv-CLO">
+            <objects>
+                <viewController storyboardIdentifier="DetailsViewController" id="sL7-hd-ldI" customClass="DetailsViewController" customModule="CollectionView_With_Data_Passing" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wkF-tS-S5Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo5" translatesAutoresizingMaskIntoConstraints="NO" id="Oc4-sv-efU">
+                                <rect key="frame" x="25" y="94" width="364" height="364"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="364" id="cG1-z9-dch"/>
+                                    <constraint firstAttribute="height" constant="364" id="mBg-ag-RtQ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H74-84-ISl">
+                                <rect key="frame" x="20" y="508" width="374" height="70"/>
+                                <color key="backgroundColor" red="1" green="0.54509803921568623" blue="0.074509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="97T-LP-OFh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="22"/>
+                                <color key="textColor" red="0.10196078431372549" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ffF-Fz-pl6"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.87058823529411766" blue="0.72941176470588232" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="H74-84-ISl" firstAttribute="top" secondItem="Oc4-sv-efU" secondAttribute="bottom" constant="50" id="Ir8-Hq-MW7"/>
+                            <constraint firstItem="Oc4-sv-efU" firstAttribute="top" secondItem="ffF-Fz-pl6" secondAttribute="top" constant="50" id="c6P-uj-kza"/>
+                            <constraint firstItem="ffF-Fz-pl6" firstAttribute="trailing" secondItem="H74-84-ISl" secondAttribute="trailing" constant="20" id="eNo-zt-dTz"/>
+                            <constraint firstItem="H74-84-ISl" firstAttribute="leading" secondItem="ffF-Fz-pl6" secondAttribute="leading" constant="20" id="tna-fg-z3p"/>
+                            <constraint firstItem="Oc4-sv-efU" firstAttribute="centerX" secondItem="wkF-tS-S5Q" secondAttribute="centerX" id="y3S-MM-F2M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="detailsLabel" destination="H74-84-ISl" id="uC2-X8-XR9"/>
+                        <outlet property="imageDetailsView" destination="Oc4-sv-efU" id="W90-69-jAk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B8E-2q-zXx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1957.9710144927537" y="99.776785714285708"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2Vt-C5-Z9o">

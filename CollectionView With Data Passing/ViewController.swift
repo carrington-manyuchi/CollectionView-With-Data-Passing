@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         "The Godfather (1972) ",
         "The Lord of the Rings",
         "The Return of the King",
-        "The Empire Strikes Back",
+        "The Empire Strikes ",
         "The Matrix (1999)",
         "Star Wars",
         "Seven Samurai (1954)",
@@ -62,5 +62,14 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let size = (collectionView.frame.size.width-10) / 2
         return CGSize(width: size, height: size)
+    }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let storyboard = self.storyboard?.instantiateViewController(identifier: "DetailsViewController") as! DetailsViewController
+        storyboard.mimg = UIImage(named: movieImage[indexPath.row])
+        storyboard.mLbl = movieTitle[indexPath.row]
+        self.navigationController?.pushViewController(storyboard, animated: true)
     }
 }
